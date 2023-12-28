@@ -8,63 +8,54 @@
 </head>
 
 <body>
-    <h2>CHALLENGE #1</h2>
-    <div>
-        Mark and John are trying to compare their BMI (Body Mass Index), which is calculated using the formula: BMI =
-        mass /
-        (height * height) (mass in kg and height in meters).
+    <section>
+        <h2>CHALLENGE #1</h2>
+        <div>
+            Mark와 John은 공식( BMI = mass / (height * height)질량(kg)과 키(m))을 사용하여 계산된 BMI(체질량 지수)를 비교하려고 합니다.
 
-        Your task is to write some code to help them:
+            당신의 임무는 그들을 돕기 위한 몇 가지 코드를 작성하는 것입니다.
 
-        Store Mark's and John's mass and height in variables called massMark, heightMark, massJohn and heightJohn.
+            Mark와 John의 질량과 키를 massMark, heightMark및 massJohn이라는 변수에 저장합니다 heightJohn.
 
-        Calculate both their BMIs using the formula, and store the results in two variables called BMIMark and BMIJohn.
+            공식을 사용하여 두 사람의 BMI를 모두 계산하고 결과를 BMIMark및 라는 두 변수에 저장합니다 BMIJohn.
 
-        Log the value of BMIMark and BMIJohn to the console.
+            BMIMark및 값을 BMIJohn콘솔에 기록합니다.
 
-        BONUS: Create a boolean variable markHigherBMI containing information about whether Mark has a higher BMI than
-        John. Log
-        it to the console too
+            보너스markHigherBMI : Mark가 John보다 BMI가 더 높은지에 대한 정보가 포함된 부울 변수를 만듭니다 . 콘솔에도 로그인하세요.
 
-        TEST DATA: Marks weighs 78 kg and is 1.69 m tall. John weighs 92 kg and is 1.95 m tall.
+            테스트 데이터: 마크의 무게는 78kg이고 키는 1.69m입니다. John의 몸무게는 92kg이고 키는 1.95m입니다.
 
 
 
-        👋 OPTIONAL: You can watch my solution in video format in the next lecture
+            👋 선택 사항: 다음 강의에서 내 솔루션을 비디오 형식으로 시청하실 수 있습니다
 
 
 
-        IMPORTANT: The ** operator is not supported in this editor. Please make sure to use exactly this formula mass /
-        (height
-        * height), and not this one mass / (height ** 2).
-    </div>
-    <div>
-        ==============================================================================================================================
-    </div>
-    <div>
-        Mark와 John은 공식( BMI = mass / (height * height)질량(kg)과 키(m))을 사용하여 계산된 BMI(체질량 지수)를 비교하려고 합니다.
+            중요: 이 편집기에서는 연산자 **가 지원되지 않습니다. mass / (height * height)이 공식이 아닌 정확히 이 공식을 사용하십시오 mass / (height ** 2).
+        </div>
+    </section>
 
-        당신의 임무는 그들을 돕기 위한 몇 가지 코드를 작성하는 것입니다.
+    <section class="challenge4">
+        <h2>CHALLENGE #4</h2>
+        <div>
+            <p>스티븐은 식당에 식사하러 갈 때마다 아주 간단한 팁 계산기가 필요합니다. </p>
+            <p>그의 나라에서는 청구서 금액이 50~300 사이이면 팁 15%를 주는 것이 일반적입니다. </p>
+            <p>금액이 다를 경우 팁은 20%입니다.</p>
 
-        Mark와 John의 질량과 키를 massMark, heightMark및 massJohn이라는 변수에 저장합니다 heightJohn.
-
-        공식을 사용하여 두 사람의 BMI를 모두 계산하고 결과를 BMIMark및 라는 두 변수에 저장합니다 BMIJohn.
-
-        BMIMark및 값을 BMIJohn콘솔에 기록합니다.
-
-        보너스markHigherBMI : Mark가 John보다 BMI가 더 높은지에 대한 정보가 포함된 부울 변수를 만듭니다 . 콘솔에도 로그인하세요.
-
-        테스트 데이터: 마크의 무게는 78kg이고 키는 1.69m입니다. John의 몸무게는 92kg이고 키는 1.95m입니다.
-
-
-
-        👋 선택 사항: 다음 강의에서 내 솔루션을 비디오 형식으로 시청하실 수 있습니다
-
-
-
-        중요: 이 편집기에서는 연산자 **가 지원되지 않습니다. mass / (height * height)이 공식이 아닌 정확히 이 공식을 사용하십시오 mass / (height ** 2).
-    </div>
+            <h3>귀하의 작업:</h3>
+            <p>청구 금액에 따라 팁을 계산합니다.</p>
+            <p>이를 위해 tip이라는 변수를 만듭니다. </p>
+            <p>if...else 문을 사용하는 것은 허용되지 않습니다. </p>
+            <p>(더 쉬우면 if...else 문으로 시작한 다음 시도해 보세요. 삼항 연산자로 변환합니다.</p>
+            <p>bill 값, tip 및 최종 값()을 포함하는 문자열을 콘솔에 인쇄합니다. .bill + tip</p>
+            <p>예: The bill was 275, the tip was 41.25, and the total value 316.25.</p>
+            <p>참고: bill 및 tip 변수의 값을 사용하여 이 문자열을 구성합니다. 하드 코딩하지 마세요 🙂</p>
+            <p>테스트 데이터: 다양한 bill 값(275, 40 및 430)으로 테스트</p>
+            <p>힌트: 값의 20%를 계산하려면 20/100 = 0.2를 곱하면 됩니다.</p>
+            <p>힌트 2: 다음과 같은 경우 값 X는 50에서 300 사이입니다. >= 50 && <= 300 😉</p>
+        </div>
+    </section>
     <script src="index.js"></script>
+    <script src="challenge.js"></script>
 </body>
-
 </html>
