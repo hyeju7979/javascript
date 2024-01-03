@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section class="challenge1">
+        <div>
+            <h1>CHALLENGE #1</h1>
+            <p>다시 두 체조팀, 돌고래와 코알라로 돌아오겠습니다! 다르게 작동하는 새로운 체조 규율이 있습니다.</p>
+             <!-- 돌고래와 코알라의 변수를 생성 -->
+            <p>각 팀은 3번의 경쟁을 펼친 후 3개의 점수의 평균이 계산됩니다(즉, 팀당 하나의 평균 점수).</p>
+             <!-- 평균 점수를 내야 하는데 공식을 모르겠음 -->
+            <p>팀은 다른 팀의 평균 점수의 두 배 이상을 획득한 경우 에만 승리합니다. 그렇지 않으면 어떤 팀도 승리할 수 없습니다!</p>
+             <!-- if/else로 구성 -->
+        </div>
+
+        <div>
+            <h2>Your tasks:</h2>
+            <ol>
+                <li>
+                    calcAverage 3개 점수의 평균을 계산하는 화살표 함수를 만듭니다.<br />
+                    이 함수에는 세 개의 매개변수가 있어야 하며 단일 숫자(평균 점수)를 반환해야 합니다.
+                </li>
+                <li>
+                    두 개의 새 변수( scoreDolphins및 ) 를 만들고 함수 scoreKoalas에서 반환된 값을 calcAverage해당 변수에 할당합니다.<br />
+                    (이 함수를 호출하고 점수를 인수로 전달해야 합니다).
+                </li>
+                <li>
+                    checkWinner위의 규칙에 따라 각 팀의 평균 점수를 매개변수( avgDolphins및 avgKoalas)로 사용하고 승점과 함께 승자를 콘솔에 기록하는 함수를 만듭니다.<br />
+                    예: ( 하드 코딩된 값 대신 avgDolphins 및 avgKoalasKoalas win (30 vs. 13) 사용 )
+                </li>
+                <li>이 함수를 사용하여 DATA 1 과 DATA 2checkWinner 모두에 대한 승자를 결정합니다 .</li>
+                <li>이번에는 무승부를 무시하세요. 대신 No team wins...승자가 없으면 콘솔에 로그인하세요.</li>
+            </ol>
+        </div>
+
+        <div>
+            <p>테스트 데이터 1 : 돌고래는 44, 23, 71점을 기록했습니다. 코알라는 65, 54, 49점을 기록했습니다.</p>
+            <p>테스트 데이터 2 : 돌고래는 85, 54, 41점을 기록했습니다. 코알라는 23, 34, 27점을 기록했습니다.</p>
+        </div>
+    </section>
+    <script src="challenge.js"></script>
+</body>
+</html>
