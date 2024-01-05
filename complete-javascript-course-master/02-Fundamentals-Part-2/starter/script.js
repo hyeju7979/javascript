@@ -204,7 +204,7 @@ console.log (age, retirement);  */
 // 배열
     const friends = ['Michael', 'Steven', 'Peter'] ;
     console.log(friends);
-
+    
     // const friends = new Array('Michael', 'Steven', 'Peter');
     // console.log(friends);
 
@@ -221,6 +221,8 @@ console.log (age, retirement);  */
 
     friends[2] = 'Jay';
     console.log(friends);
+
+
 
     const firstName = 'Jonas'
     // const jonas = ['Jonas', 'Schmedtmann', 2024 - 1979, 'teacher', firends];
@@ -240,3 +242,22 @@ console.log (age, retirement);  */
 
     const ages = [calcAge(y[0]), calcAge(y[1]), calcAge(y[y. length - 1])];
     console.log(ages);
+
+
+    // 요소 추가 
+    const newFriends = ['Michael', 'Steven', 'Peter'] ;
+    newFriends.push('Tom'); // 순차적으로 추가됨 (제일 마지막)
+    newFriends.unshift('Jonas'); // 제일 앞에 추가됨
+
+    console.log(newFriends);
+
+    // 요소 삭제
+    newFriends.pop(); // 순차적으로 삭제됨 (제일 마지막)
+    newFriends.pop();
+    const popped = newFriends.pop(); // 마지막 삭제된 요소를 호출해 줌
+    newFriends.shift(); // 제일 앞 요소를 삭제
+    console.log(newFriends);
+    // console.log(popped);
+
+
+   
