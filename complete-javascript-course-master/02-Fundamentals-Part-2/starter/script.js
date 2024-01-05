@@ -195,3 +195,48 @@ const age = 2037 - birthYear;
 const retirement = 65 - age;
 
 console.log (age, retirement);  */
+
+// 데이터 구조
+    const friend1 = 'Michael';
+    const friend2 = 'Steven';
+    const friend3 = 'Peter';
+
+// 배열
+    const friends = ['Michael', 'Steven', 'Peter'] ;
+    console.log(friends);
+
+    // const friends = new Array('Michael', 'Steven', 'Peter');
+    // console.log(friends);
+
+    const years = new Array(1948, 1977, 1979, 1981, 2024);
+    console.log(years);
+
+    console.log(friends[0], friends[2]);
+    console.log(years[3], years[4]);
+
+
+    console.log(friends. length, years. length);
+
+    console.log(friends[friends. length -1], years[years. length -1]);
+
+    friends[2] = 'Jay';
+    console.log(friends);
+
+    const firstName = 'Jonas'
+    // const jonas = ['Jonas', 'Schmedtmann', 2024 - 1979, 'teacher', firends];
+    const jonas = [firstName, 'Schmedtmann', 2024 - 1979, 'teacher', friends];
+    console.log(jonas);
+
+    const calcAge = function (birthYeah) {
+        return 2037 - birthYeah;
+    }
+    // 인수 birthYeah가 없는데???
+
+    const y = [1990, 1967, 2002, 2010, 2018];
+    const ages1 = calcAge(y[0]); // 왜 y값을 빼는건지?
+    const ages2 = calcAge(y[1]);
+    const ages3 = calcAge(y[y. length - 1]);
+    console.log(ages1, ages2, ages3);
+
+    const ages = [calcAge(y[0]), calcAge(y[1]), calcAge(y[y. length - 1])];
+    console.log(ages);
