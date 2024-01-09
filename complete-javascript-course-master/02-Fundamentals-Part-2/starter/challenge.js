@@ -64,5 +64,15 @@ console.log(scoreDolphins, scoreKoalas);
 checkWinner(scoreDolphins, scoreKoalas);
 
 
+const calcTip = function => (125, 555, 44);
+const bills = [125, 555, 44];
+const tips = [];
+const totals = [bills + tip];
+if (calcTip => 50 < 300){
+    15%;
+} else () {
+    20;
+}
+console.log(totals);
 
 

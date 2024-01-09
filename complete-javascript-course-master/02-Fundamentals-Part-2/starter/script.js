@@ -259,5 +259,16 @@ console.log (age, retirement);  */
     console.log(newFriends);
     // console.log(popped);
 
+const fruits = ['사과', '배', '딸기','파인애플'];
+const fruitsLength = fruits.push ('단감');
+console.log(fruits);
+console.log(fruitsLength); // 총 카운트를 반환
 
-   
+console.log(fruits.indexOf('딸기')); // 딸기 요소의 위치를 반환
+console.log(fruits.indexOf('호빵')); // 호빵 요소의 위치를 반환. 요소가 없는 경우 -1을 반환
+    fruits.push(23);
+    console.log(fruits);
+
+console.log(fruits.includes('딸기')); // 참 또는 거짓을 반환
+console.log(fruits.includes('호빵'));
+console.log(fruits.includes(23));
