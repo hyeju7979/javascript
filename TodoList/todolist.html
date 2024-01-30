@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="todolist.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script defer src="todolist.js"></script>
+</head>
+<body>
+    <section class="wrapper">
+        <header>TO DO LIST</header>   
+        <div>
+            <div class="inputField">
+                <input type="text" id="todoInput" class="todo" placeholder="할 일 추가하기"/>
+                <button type="button" id="addTodoButton">+</button>
+            </div>
+        </div>
+        <div>
+            <ul id="addTodo" class="todoList"> 
+               
+            </ul>
+        </div>
+
+        <div class="footer btn_list">
+            <button type="button" id = "allClear" onclick="allClearList()">전체 삭제</button>
+            <button type="button" id = "allOpen" onclick="allOopenList()">전체 열기</button>
+            <button type="button" id = "allClose" onclick="allCloseList()">전체 닫기</button>
+        </div>
+    </section>
+</body>
+</html>
