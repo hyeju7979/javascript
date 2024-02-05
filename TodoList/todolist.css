@@ -1,6 +1,12 @@
 @import "reset.css";
 @import "designSystem.css";
 
+/* basic S */
+select, input {
+    outline: none;
+}
+/* basic E */
+
 
 /* common-S */
 html {
@@ -47,7 +53,6 @@ header {
     border: none;
     font-size: 1.6em;
     border-radius: 0.5em 0 0 0.5em;
-    outline: none;
 }
 .inputField button {
     width: 4.4em;
@@ -62,4 +67,10 @@ header {
 .todoList li {
     font-size: 1.6em;
     line-height: 2em;
+}
+.slctCat {
+    border: 0;
+    padding: 0.4em;
+    margin: 0 0.5em;
+    border-radius: 0.5em;
 }

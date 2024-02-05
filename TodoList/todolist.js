@@ -1,9 +1,20 @@
 $(document).ready(function(){
     $('#addTodoButton').on('click',addTodo);
     $('#todoInput').on('keydown',keyDown);
+    $('#slctCat').on('change',keyAction);
     $(document).on('click','.removeBtn' , removeTodo);
     $(document).on('click','.checkRun' , checkBox);
 });
+
+
+
+// 카테고리 선택 시 이벤트
+function keyAction(e) {
+    const selectedCategory = $(this).val();
+    // 선택한 카테고리에 따라 인풋 창 활성화/비활성화
+    $('#todoInput').prop('disabled', selectedCategory === "");
+}
+
 
 function checkBox(e) {
     /*
@@ -23,11 +34,13 @@ function checkBox(e) {
     }
 }
 
+
 function removeTodo(event) {
     console.log(event);
     console.log(event.currentTarget);
     $(event.currentTarget).closest('li').remove();
 }   
+
 
 function keyDown(event) { 
     if (event.keyCode == 13) {
@@ -35,8 +48,10 @@ function keyDown(event) {
     }
 }
 
+
 function addTodo() {
     const inputValue = $('#todoInput').val();
+        
     if(inputValue == ''){
         alert('내용을 입력하세요!');
         return;
@@ -52,8 +67,8 @@ function addTodo() {
     
     $('#addTodo').append('<li><input type="checkbox" class="checkRun">'+inputValue+'<button class="removeBtn">삭제</button></li>');
     $('#todoInput').val('');
-
-
+    $('#slctCat').val('');
+    $('#todoInput').prop('disabled', true);
     /** 
     
         1. 인풋 앞에 셀렉트 박스를 추가한다.
@@ -61,7 +76,7 @@ function addTodo() {
         3. 카테고리를 선택하고 할일을 입력한 후 추가하면
         4. 결과로 [카테고리] 입력한 내용
         5. 만약 카테고리를 선택하지 않고 추가를 하면 경고창을 띄워준다.
-        
+
 
     */
 }

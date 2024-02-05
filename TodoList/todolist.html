@@ -13,6 +13,18 @@
         <header>TO DO LIST</header>   
         <div>
             <div class="inputField">
+                <select name="pets" id="slctCat" class="slctCat">
+                    <option value="">-- CATEGORY --</option>
+                    <option value="study">STUDY</option>
+                    <optgroup label="">
+                        <option value="JavaScript">JavaScript</option>
+                        <option value="English">English</option>
+                        <option value="정보처리기사">정보처리기사</option>
+                    </optgroup>
+                    <option value="job">JOB</option>
+                    <option value="sports">SPORTS</option>
+                    <option value="housework">HOUSE WORK</option>
+                </select>
                 <input type="text" id="todoInput" class="todo" placeholder="할 일 추가하기"/>
                 <button type="button" id="addTodoButton">+</button>
             </div>
@@ -29,5 +41,6 @@
             <button type="button" id = "allClose" onclick="allCloseList()">전체 닫기</button>
         </div>
     </section>
+
 </body>
 </html>
