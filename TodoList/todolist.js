@@ -1,19 +1,12 @@
 $(document).ready(function(){
     $('#addTodoButton').on('click',addTodo);
     $('#todoInput').on('keydown',keyDown);
-    $('#slctCat').on('change',keyAction);
     $(document).on('click','.removeBtn' , removeTodo);
     $(document).on('click','.checkRun' , checkBox);
+
+    // 셀랙트박스 대신 input 추가
+    $('#slctCat').on('keydown',keyDown);
 });
-
-
-
-// 카테고리 선택 시 이벤트
-function keyAction(e) {
-    const selectedCategory = $(this).val();
-    // 선택한 카테고리에 따라 인풋 창 활성화/비활성화
-    $('#todoInput').prop('disabled', selectedCategory === "");
-}
 
 
 function checkBox(e) {
@@ -51,7 +44,8 @@ function keyDown(event) {
 
 function addTodo() {
     const inputValue = $('#todoInput').val();
-        
+    const categoryValue = $('#slctCat').val();
+
     if(inputValue == ''){
         alert('내용을 입력하세요!');
         return;
@@ -65,10 +59,10 @@ function addTodo() {
         return;
     }
     
-    $('#addTodo').append('<li><input type="checkbox" class="checkRun">'+inputValue+'<button class="removeBtn">삭제</button></li>');
+    $('#addTodo').append('<li><input type="checkbox" class="checkRun"> ['+categoryValue+'] '+inputValue+' <button class="removeBtn">삭제</button></li>');
     $('#todoInput').val('');
-    $('#slctCat').val('');
-    $('#todoInput').prop('disabled', true);
+    // $('#slctCat').val('');
+    // $('#todoInput').prop('disabled', true);
     /** 
     
         1. 인풋 앞에 셀렉트 박스를 추가한다.

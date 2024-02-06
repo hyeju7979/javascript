@@ -1,37 +1,39 @@
---- 01. TYPOGRAPHY SYSTEM ---
+/* --- 01. TYPOGRAPHY SYSTEM --- */
 
 /* - font size */
-10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+/* 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 */
 
 
 /* - font weight */
-Default: 400
+/* Default: 400 */
 
 
 /* - line heights */
-Default: 1
+/* Default: 1 */
 
 
 /* - letter spacing */
 
 
 /* --- 02. color */
-- Primary: #e67e22
+/* - Primary: #e67e22
 - Tints:
 - Shades:
 - Accents:
-- Greys: #555
+- Greys: #555 */
 
 
 /* --- 05. SHADOWS --- */
 
 
 /* --- 06. BORDER-RADIUS --- */
-
+.corners-4 {
+    border-radius: 0.5em;
+}
 
 /* --- 07. WHITESPACE --- */
-- SPACING SYSTEM (px)
-2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+/* - SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
 
 
 
